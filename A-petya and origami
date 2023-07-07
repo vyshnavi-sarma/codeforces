@@ -1,0 +1,11 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+  int n,k,r,g,b;
+  cin>>n>>k;
+  r=ceil((n*2)/k);
+  g=ceil((n*5)/k);
+  b=ceil((n*8)/k);
+  cout<<(r+g+b);
+}
