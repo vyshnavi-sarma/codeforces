@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+ 
+int main(){
+    int n,k;
+    cin>>n>>k;
+    int joy[n];
+    for (int i = 0; i < n; i++)
+    {
+        int f,t;
+        cin>>f>>t;
+        if(t<=k){
+            joy[i]=f;
+        }
+        else{
+            joy[i]=f+k-t;
+        }
+    }
+    sort(joy,joy+n);
+    cout<<joy[n-1];
+    return 0;
+}
