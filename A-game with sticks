@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n,m;
+    cin>>n>>m;
+    if(n==m && n%2==0){
+        cout<<"Malvika";
+    } else if(n==m && n%2!=0){
+        cout<<"Akshat";
+    }
+    else if(n>m && m%2==0){
+        cout<<"Malvika";
+    }else if(n>m && m%2!=0){ 
+        cout<<"Akshat";}
+     else if(n<m && n%2==0){
+        cout<<"Malvika";
+    }else if(n<m && n%2!=0){
+        cout<<"Akshat";
+    }
+}
